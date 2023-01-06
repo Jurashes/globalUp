@@ -50,8 +50,6 @@
 				color: white;
 			}
 			.net__works{
-				display: flex;
-				justify-content: center;
 				img{
 					margin: 0 10px;
 					padding: 5px;
@@ -83,31 +81,31 @@
 }
 .img__container, .img__container2{
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
+
 
 	.container__text{
 		p{
 			width: 500px;
-			padding: 15px 40px;
 			text-align: center;
 			font-family: 'East Sea Dokdo', cursive;
 			font-family: 'Raleway', sans-serif;
-			margin: 0px 40px;
 			color: black;
 		}
 	}
 }
 .img__number1{
-	padding: 10px 40px;
+	padding: 10px 0px;
 	width: 500px;
 	height: 500px;
-	margin: 20px 40px;
+	margin: 20px 0px;
 }
 .img__number2{
-	padding: 10px 40px;
+	padding: 10px 0px;
 	width: 500px;
-	margin: 20px 40px;
+	margin: 20px 0px;
 }
 
 .my-btn{
@@ -138,7 +136,7 @@
 	margin: 0 50px;
 	.slider__item{
 		margin: 0 60px;
-		img{width: 200px;}
+		img{width: 200px; height: auto;}
 		h1{
 			font-family: 'East Sea Dokdo', cursive;
 			font-family: 'Raleway', sans-serif;
@@ -155,27 +153,7 @@
 	}
 }
 
-@media (max-width: 1300px){
-	.img__container, .img__container2{
-		flex-wrap: wrap;
-		.container__text{
-			p{
-				width: 500px;
-				padding: 15px 20px;
-				text-align: center;
-				font-family: 'East Sea Dokdo', cursive;
-				font-family: 'Raleway', sans-serif;
-				margin: 0px 20px;
-				color: black;
-			}
-		}
-	}
-	.custom1{
-		.demos__item{
-			height: 60vh;
-		}
-	}
-}
+
 .my__menu{
 	display: none;
 }
@@ -218,25 +196,14 @@
 		display: block;
 	}
 }
-@media (max-width: 668px){
-	.container{
-		.nav{
-			.cen__nav{
-				
-				h1{
-					font-size: 7rem;
-				}
-			}
-		}
-	}
-}
-@media(max-width: 618px){
+
+@media(max-width: 668px){
 	.container{
 		.nav{
 			.cen__nav{
 				left: 10%;
 				h1{
-					font-size: 7rem;
+					font-size: 5rem;
 				}
 				.net__works{
 					flex-wrap: wrap;
@@ -244,63 +211,45 @@
 			}
 		}
 	}
-	.img__container, .img__container2{
-
-		flex-wrap: wrap;
-		.container__text{
-			p{
-				width: 500px;
-				padding: 15px 0px;
-				text-align: center;
-				font-family: 'East Sea Dokdo', cursive;
-				font-family: 'Raleway', sans-serif;
-				margin: 0px 0px;
-				color: black;
-			}
+	.main-carousel{
+		padding: 50px 0px;
+		// margin: 0 50px;
+	.slider__item{
+		// margin: 0 60px;
+		img{width: 100%; margin: 0 60px;}
+		h1{
+			font-family: 'East Sea Dokdo', cursive;
+			font-family: 'Raleway', sans-serif;
+			text-align: center;
 		}
 	}
-	.img__number1{
-	padding: 10px 40px;
-	width: 500px;
-	height: 500px;
-	margin: 20px 40px;
 }
-.img__number2{
-	padding: 10px 40px;
-	width: 500px;
-	margin: 20px 40px;
-}
-
-
-}
-@media(max-width: 318px){
-	.container{
-		.nav{
-			.cen__nav{
-				left: 10%;
-				
-				.net__works{
-					flex-wrap: wrap;
-				}
-			}
+.custom1{
+	margin: 40px 0;
+	.demos__item{
+		img{
+			height: auto;
 		}
 	}
-	.img__container, .img__container2{
+}
+.img__container, .img__container2{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
 
-		flex-wrap: wrap;
-		.container__text{
-			p{
-				width: auto;
-				padding: 15px 0px;
-				text-align: center;
-				font-family: 'East Sea Dokdo', cursive;
-				font-family: 'Raleway', sans-serif;
-				margin: 0px 0px;
-				color: black;
-			}
+
+	.container__text{
+		p{
+			width: 300px;
+			text-align: center;
+			font-family: 'East Sea Dokdo', cursive;
+			font-family: 'Raleway', sans-serif;
+			color: black;
 		}
 	}
-	.img__number1{
+}
+.img__number1{
 	padding: 10px 0px;
 	width: 100%;
 	height: auto;
