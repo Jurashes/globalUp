@@ -241,7 +241,7 @@
 
 	.container__text{
 		p{
-			width: 100px;
+			width: 500px;
 			text-align: center;
 			font-family: 'East Sea Dokdo', cursive;
 			font-family: 'Raleway', sans-serif;
@@ -259,5 +259,25 @@
 	padding: 10px 0px;
 	width: 100%;
 	margin: 20px 0px;
+}
+}
+
+@media (max-width: 368px) {
+	.img__container, .img__container2{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+
+	.container__text{
+		p{
+			width: 200px;
+			text-align: center;
+			font-family: 'East Sea Dokdo', cursive;
+			font-family: 'Raleway', sans-serif;
+			color: black;
+		}
+	}
 }
 }
