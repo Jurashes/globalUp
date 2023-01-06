@@ -2,10 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Raleway:wght@100;200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Raleway:wght@100;200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Raleway:wght@100;200&family=Rubik+Bubbles&display=swap');
+$HauntedOne: #E0E0E0;
+$HauntedTwo: #190033;
 *{
 	margin: 0;
 	padding: 0;
+}
+body{
+	background-color: $HauntedOne;
 }
 .BodY{
 	overflow: hidden;
@@ -88,8 +93,9 @@
 
 	.container__text{
 		p{
+			margin: 20px 0;
 			width: 500px;
-			text-align: center;
+			text-align: left;
 			font-family: 'East Sea Dokdo', cursive;
 			font-family: 'Raleway', sans-serif;
 			color: black;
@@ -157,6 +163,109 @@
 .my__menu{
 	display: none;
 }
+.haunted__family{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	.family__one{
+		width: 50%;
+		background-color: #808080;
+		padding: 150px 0;
+		h1{
+			font-family: 'East Sea Dokdo', cursive;
+			font-family: 'Raleway', sans-serif;
+			font-family: 'Rubik Bubbles', cursive;
+			text-align: center;
+			margin: 5px 0;
+			font-family: 2rem;
+
+		}
+		button{
+			display: block;
+			background-color: #202020;
+			color: white;
+			padding: 25px;
+			width: auto;
+			margin: 20px auto;
+			font-size: 1.4rem;
+			cursor: pointer;
+			&:hover{
+				background-color: #808080;
+				color: #202020;
+				transition-duration: 500ms;
+				border: 1px solid black;
+			}
+		}
+	}
+	.family__two{
+		padding: 150px 0;
+		width: 50%;
+		background-color: #202020;
+		h1{
+			font-family: 'East Sea Dokdo', cursive;
+			font-family: 'Raleway', sans-serif;
+			font-family: 'Rubik Bubbles', cursive;
+			text-align: center;
+			margin: 5px 0;
+			font-family: 2rem;
+			color: white;
+		}
+		p{
+			color: white;
+			font-size: 3rem;
+			text-align: center;
+		}
+	}
+	
+}
+footer{
+	width: 100%;
+    background-color: rgba(30,33,41,1.0);
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    .footer__sec{
+    	padding: 100px 0;
+    	display: flex;
+    	justify-content: space-around;
+    	flex-wrap: wrap;
+    	.left__foot{
+    		h1{
+    			margin: 10px 0;
+    			font-size: 1.3rem;
+    			color: white;
+    		}
+    		a{
+    			color: white;
+    			margin: 10px 0;
+    			font-size: 1.3rem;
+    			display: block;
+    		}
+    		img{
+    			width: 40px;
+    		}
+    	}
+    	.right__foot{
+    		h1{
+    			margin: 10px 0;
+    			font-family: 1.3rem;
+    			color: lightgray;
+    		}
+    		p{
+    			color: lightgray;
+    			margin: 20px 0;
+    		}
+    		a{
+    			font-size: 1.3rem;
+    			margin: 10px 0;
+    			color: white;
+    		}
+    	}
+    }
+}
+//mdeia
+//
+//
 @media (max-width: 968px) {
 	.container{
 		.nav{
@@ -194,6 +303,65 @@
 		top: 40px;
 		right: 40px;
 		display: block;
+	}
+	.haunted__family{
+		display: block;
+		width: 100%;
+		.family__one{
+			width: 100%;
+			background-color: #808080;
+			padding: 50px 0;
+			h1{
+				font-family: 'East Sea Dokdo', cursive;
+				font-family: 'Raleway', sans-serif;
+				font-family: 'Rubik Bubbles', cursive;
+				text-align: center;
+				margin: 5px 0;
+				font-family: 2rem;
+
+			}
+			button{
+				display: block;
+				background-color: #202020;
+				color: white;
+				padding: 25px;
+				width: auto;
+				margin: 20px auto;
+				font-size: 1.4rem;
+				cursor: pointer;
+				&:hover{
+					background-color: #808080;
+					color: #202020;
+					transition-duration: 500ms;
+					border: 1px solid black;
+				}
+			}
+		}
+		.family__two{
+			padding: 50px 0;
+			width: 100%;
+			background-color: #202020;
+			h1{
+				font-family: 'East Sea Dokdo', cursive;
+				font-family: 'Raleway', sans-serif;
+				font-family: 'Rubik Bubbles', cursive;
+				text-align: center;
+				margin: 5px 0;
+				font-family: 2rem;
+				color: white;
+			}
+			p{
+				color: white;
+				font-size: 3rem;
+				text-align: center;
+			}
+		}
+	
+	}
+	footer{
+		.footer__sec{
+			text-align: center;
+		}
 	}
 }
 
@@ -241,8 +409,8 @@
 
 	.container__text{
 		p{
-			width: 500px;
-			text-align: center;
+			width: 350px;
+			text-align: left;
 			font-family: 'East Sea Dokdo', cursive;
 			font-family: 'Raleway', sans-serif;
 			color: black;
@@ -264,21 +432,21 @@
 
 @media (max-width: 368px) {
 	.img__container, .img__container2{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
 
 
-	.container__text{
-		p{
-			width: 250px;
-			text-align: center;
-			font-family: 'East Sea Dokdo', cursive;
-			font-family: 'Raleway', sans-serif;
-			color: black;
-			margin: 20px 0;
+		.container__text{
+			p{
+				width: 250px;
+				text-align: left;
+				font-family: 'East Sea Dokdo', cursive;
+				font-family: 'Raleway', sans-serif;
+				color: black;
+				margin: 20px 0;
+			}
 		}
 	}
-}
 }
