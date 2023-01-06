@@ -229,7 +229,7 @@
     flex-wrap: wrap;
   }
   .img__container .container__text p, .img__container2 .container__text p {
-    width: 300px;
+    width: 100px;
     text-align: center;
     font-family: "East Sea Dokdo", cursive;
     font-family: "Raleway", sans-serif;
